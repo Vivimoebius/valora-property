@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://valora-property.com/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://valora-property.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valora-property.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://valora-property.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://valora-property.com/"/>
+  </url>
+  <url>
+    <loc>https://valora-property.com/en/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://valora-property.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valora-property.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://valora-property.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://valora-property.com/"/>
+  </url>
+  <url>
+    <loc>https://valora-property.com/es/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://valora-property.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://valora-property.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://valora-property.com/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://valora-property.com/"/>
+  </url>
+  <url>
+    <loc>https://valora-property.com/ueber-mich.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/immobilien/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/immobilienverwaltung-leipzig.html</loc>
+    <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/rechner.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/potenzialcheck.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/blog-management-vs-verwaltung.html</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/blog-kapitalanlage-leipzig.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/blog-mallorca.html</loc>
+    <lastmod>2026-04-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/blog-warum-valora.html</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/blog-standortunabhaengig.html</loc>
+    <lastmod>2026-04-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/datenschutz.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://valora-property.com/impressum.html</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url><loc>https://valora-property.com/faq.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/abrechnungstest.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <!-- English -->
+  <url><loc>https://valora-property.com/en/faq.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/en/abrechnungstest.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/en/ueber-mich.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://valora-property.com/en/immobilien/</loc><lastmod>2026-06-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://valora-property.com/en/rechner.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/potenzialcheck.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/en/blog-management-vs-verwaltung.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/blog-kapitalanlage-leipzig.html</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/blog-mallorca.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/blog-warum-valora.html</loc><lastmod>2026-04-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/blog-standortunabhaengig.html</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/en/datenschutz.html</loc><lastmod>2026-06-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://valora-property.com/en/impressum.html</loc><lastmod>2026-06-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <!-- Español -->
+  <url><loc>https://valora-property.com/es/faq.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/es/abrechnungstest.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/es/ueber-mich.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://valora-property.com/es/immobilien/</loc><lastmod>2026-06-23</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://valora-property.com/es/rechner.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/potenzialcheck.html</loc><lastmod>2026-06-23</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://valora-property.com/es/blog-management-vs-verwaltung.html</loc><lastmod>2026-04-15</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/blog-kapitalanlage-leipzig.html</loc><lastmod>2026-04-08</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/blog-mallorca.html</loc><lastmod>2026-04-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/blog-warum-valora.html</loc><lastmod>2026-04-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/blog-standortunabhaengig.html</loc><lastmod>2026-04-29</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://valora-property.com/es/datenschutz.html</loc><lastmod>2026-06-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://valora-property.com/es/impressum.html</loc><lastmod>2026-06-23</lastmod><changefreq>yearly</changefreq><priority>0.2</priority></url>
+</urlset>

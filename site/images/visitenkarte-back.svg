@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 610" role="img" aria-label="Valora Property Advisory — Visitenkarte Rückseite">
+  <title>Valora Property Advisory — Rückseite</title>
+  <desc>Druckformat 91 x 61 mm inkl. 3 mm Beschnitt, Endformat 85 x 55 mm.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#ede2c8"/>
+      <stop offset="100%" stop-color="#d8c69d"/>
+    </linearGradient>
+    <clipPath id="circ">
+      <circle cx="195" cy="355" r="125"/>
+    </clipPath>
+  </defs>
+
+  <rect x="0" y="0" width="910" height="610" fill="url(#bg)"/>
+
+  <!-- Kleines Monogramm oben links -->
+  <g transform="translate(80 90)">
+    <circle cx="0" cy="0" r="30" fill="none" stroke="#0a0a0a" stroke-width="1"/>
+    <text x="0" y="11" text-anchor="middle"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="38" font-weight="400" fill="#0a0a0a">V</text>
+  </g>
+
+  <!-- Wordmark oben rechts -->
+  <g transform="translate(830 90)">
+    <text x="0" y="-2" text-anchor="end"
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+          font-size="14" font-weight="400" letter-spacing="5"
+          fill="#0a0a0a">VALORA</text>
+    <text x="0" y="16" text-anchor="end"
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+          font-size="8" font-weight="400" letter-spacing="3.5"
+          fill="#0a0a0a" opacity="0.75">PROPERTY ADVISORY</text>
+  </g>
+
+  <line x1="80" y1="155" x2="830" y2="155" stroke="#0a0a0a" stroke-width="0.5" opacity="0.30"/>
+
+  <!-- Foto-Platzhalter (PNG-Renderer ersetzt durch echtes Foto) -->
+  <g>
+    <image href="vivian-main.jpg" x="0" y="160" width="400" height="400"
+           preserveAspectRatio="xMidYMid slice" clip-path="url(#circ)"/>
+    <circle cx="195" cy="355" r="125" fill="none" stroke="#0a0a0a" stroke-width="1.4"/>
+  </g>
+
+  <!-- Rechte Spalte: Kontaktdaten -->
+  <g font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" fill="#0a0a0a">
+    <g transform="translate(395 195)">
+      <text x="0" y="0"  font-size="9" letter-spacing="3" opacity="0.55">TELEFON</text>
+      <text x="0" y="22" font-size="15" letter-spacing="1.2">+49 172 577 0633</text>
+    </g>
+    <g transform="translate(395 245)">
+      <text x="0" y="0"  font-size="9" letter-spacing="3" opacity="0.55">E-MAIL</text>
+      <text x="0" y="22" font-size="15" letter-spacing="1.2">info@valora-property.com</text>
+    </g>
+    <g transform="translate(395 295)">
+      <text x="0" y="0"  font-size="9" letter-spacing="3" opacity="0.55">WEB</text>
+      <text x="0" y="22" font-size="15" letter-spacing="1.2">www.valora-property.com</text>
+    </g>
+    <g transform="translate(395 345)">
+      <text x="0" y="0"  font-size="9" letter-spacing="3" opacity="0.55">ADRESSE</text>
+      <text x="0" y="22" font-size="15" letter-spacing="1.2">Wolfgang-Heinze-Straße 8</text>
+      <text x="0" y="42" font-size="15" letter-spacing="1.2">04416 Markkleeberg</text>
+    </g>
+  </g>
+
+  <!-- Slogan unten -->
+  <text x="455" y="555" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="14" font-style="italic" font-weight="400"
+        fill="#0a0a0a" opacity="0.65">Strategisches Immobilienmanagement mit Weitblick</text>
+</svg>

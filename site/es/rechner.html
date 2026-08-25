@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadoras inmobiliarias gratuitas de Valora Property Advisory: calcule la rentabilidad del alquiler, la rentabilidad sobre fondos propios y la evolución del valor – además de una guía sobre lo que necesita para invertir en Mallorca.">
+    <meta name="keywords" content="calculadora de rentabilidad, rentabilidad sobre fondos propios, evolución del valor inmueble, rentabilidad del alquiler, invertir en Mallorca, calculadora de inversión inmobiliaria">
+    <meta name="author" content="Valora Property Advisory">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Calculadoras: rentabilidad y valor | Valora</title>
+    <meta property="og:site_name" content="Valora Property Advisory">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="Calculadoras inmobiliarias: rentabilidad y evolución del valor">
+    <meta property="og:description" content="Calcule la rentabilidad del alquiler, la rentabilidad sobre fondos propios y la evolución del valor – además de una guía para invertir en Mallorca.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valora-property.com/es/rechner.html">
+    <meta property="og:image" content="https://valora-property.com/images/grid-mallorca-villa.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Calculadoras inmobiliarias: rentabilidad y evolución del valor">
+    <meta name="twitter:description" content="Calcule la rentabilidad del alquiler, la rentabilidad sobre fondos propios y la evolución del valor – además de una guía de Mallorca.">
+    <meta name="twitter:image" content="https://valora-property.com/images/grid-mallorca-villa.jpg">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="canonical" href="https://valora-property.com/es/rechner.html">
+    <link rel="alternate" hreflang="de" href="https://valora-property.com/rechner.html">
+    <link rel="alternate" hreflang="en" href="https://valora-property.com/en/rechner.html">
+    <link rel="alternate" hreflang="es" href="https://valora-property.com/es/rechner.html">
+    <link rel="alternate" hreflang="x-default" href="https://valora-property.com/rechner.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Calculadoras inmobiliarias de Valora",
+      "url": "https://valora-property.com/es/rechner.html",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web",
+      "inLanguage": "es",
+      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "EUR"},
+      "provider": {"@id": "https://valora-property.com/#organization"}
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .calc-wrap { max-width: 920px; margin: 0 auto; padding: 20px 24px 40px; }
+        .calc { border: 1px solid rgba(206,176,104,0.2); background: rgba(255,255,255,0.012); padding: 40px; margin-bottom: 40px; }
+        .calc-head { margin-bottom: 28px; }
+        .calc-head .eyebrow { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #ceb068; display: block; margin-bottom: 8px; }
+        .calc-head h2 { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: #fff; text-align: left; margin: 0; }
+        .calc-head h2::after { display: none; }
+        .calc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+        .calc-field { margin-bottom: 18px; }
+        .calc-field label { display: block; font-family: 'Inter', sans-serif; font-size: 12px; color: #aaa; font-weight: 300; margin-bottom: 6px; }
+        .calc-field input {
+            width: 100%; padding: 12px 14px; background: #000; color: #fff;
+            border: 1px solid rgba(255,255,255,0.15); font-family: 'Inter', sans-serif; font-size: 15px;
+            transition: border-color .2s; color-scheme: dark;
+        }
+        .calc-field input:focus { outline: none; border-color: #ceb068; }
+        .calc-results { background: #000; border: 1px solid rgba(206,176,104,0.25); padding: 28px; }
+        .result-row { display: flex; justify-content: space-between; align-items: baseline; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.07); }
+        .result-row:last-child { border-bottom: none; }
+        .result-label { font-family: 'Inter', sans-serif; font-size: 13px; color: #aaa; font-weight: 300; }
+        .result-value { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #ceb068; font-weight: 400; }
+        .result-row.minor .result-value { font-size: 19px; color: #fff; }
+        .calc-note { font-size: 11px; color: #666; line-height: 1.7; margin-top: 18px; }
+        .mallorca-box { border: 1px solid rgba(206,176,104,0.2); padding: 44px; background: rgba(206,176,104,0.04); }
+        .mallorca-box h2 { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: #fff; text-align: center; margin-bottom: 12px; }
+        .mallorca-box > p.lead { text-align: center; color: #aaa; font-size: 15px; font-weight: 300; line-height: 1.8; max-width: 600px; margin: 0 auto 32px; }
+        .mallorca-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px 40px; max-width: 760px; margin: 0 auto; }
+        .mallorca-item h4 { font-family: 'Inter', sans-serif; font-size: 14px; color: #ceb068; font-weight: 500; margin-bottom: 6px; }
+        .mallorca-item p { font-size: 13px; color: #999; font-weight: 300; line-height: 1.75; margin: 0; }
+        @media (max-width: 820px) { .calc-grid, .mallorca-list { grid-template-columns: 1fr; } .calc, .mallorca-box { padding: 28px 22px; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled">
+        <div class="nav-container">
+            <button class="nav-toggle" aria-label="Menú" id="navToggle"><span></span><span></span><span></span></button>
+            <a class='logo' href='/es/'><div class="logo-circle">V</div><div class="logo-text"><span class="logo-name">Valora</span><span class="logo-sub">Property Advisory</span></div></a>
+        </div>
+    </nav>
+    <ul class="nav-links" id="navLinks">
+        <li><a href='/es/'>Inicio</a></li>
+        <li><a href='/es/#services'>Servicios</a></li>
+        <li><a href='/es/ueber-mich'>Sobre nosotros</a></li>
+        <li><a href='/es/immobilien/'>Inmuebles</a></li>
+        <li><a href='/es/#potenzialcheck'>Chequeo de potencial</a></li>
+        <li><a href='/es/#contact'>Contacto</a></li>
+    </ul>
+
+    <header class="page-header">
+        <p class="eyebrow center">Herramientas para propietarios e inversores</p>
+        <h1>Calculadoras inmobiliarias</h1>
+        <div style="width:40px;height:1px;background:#ceb068;margin:16px auto 0;"></div>
+    </header>
+
+    <div class="calc-wrap">
+
+        <!-- Renditerechner -->
+        <section class="calc" id="rendite">
+            <div class="calc-head">
+                <span class="eyebrow">Calculadora 01</span>
+                <h2>Rentabilidad del alquiler y rentabilidad sobre fondos propios</h2>
+            </div>
+            <div class="calc-grid">
+                <div>
+                    <div class="calc-field"><label>Precio de compra (€)</label><input type="number" id="r_preis" value="400000" min="0"></div>
+                    <div class="calc-field"><label>Gastos de compra (%)</label><input type="number" id="r_neben" value="10" min="0" step="0.1"></div>
+                    <div class="calc-field"><label>Renta neta anual sin gastos (€)</label><input type="number" id="r_miete" value="18000" min="0"></div>
+                    <div class="calc-field"><label>Gastos no repercutibles / año (€)</label><input type="number" id="r_kosten" value="2400" min="0"></div>
+                    <div class="calc-field"><label>Fondos propios aportados (€)</label><input type="number" id="r_ek" value="120000" min="0"></div>
+                    <div class="calc-field"><label>Tipo de interés del préstamo anual (%)</label><input type="number" id="r_zins" value="3.5" min="0" step="0.1"></div>
+                </div>
+                <div class="calc-results">
+                    <div class="result-row"><span class="result-label">Rentabilidad bruta del alquiler</span><span class="result-value" id="r_brutto">–</span></div>
+                    <div class="result-row"><span class="result-label">Rentabilidad neta del alquiler</span><span class="result-value" id="r_netto">–</span></div>
+                    <div class="result-row"><span class="result-label">Rentabilidad sobre fondos propios</span><span class="result-value" id="r_ekr">–</span></div>
+                    <div class="result-row minor"><span class="result-label">Inversión total</span><span class="result-value" id="r_gesamt">–</span></div>
+                    <div class="result-row minor"><span class="result-label">Flujo de caja / año (antes de amortización e impuestos)</span><span class="result-value" id="r_cf">–</span></div>
+                    <p class="calc-note">Estimación simplificada sin amortización ni impuestos. La rentabilidad sobre fondos propios tiene en cuenta la financiación ajena (apalancamiento). No sustituye al asesoramiento fiscal o financiero.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wertentwicklungsrechner -->
+        <section class="calc" id="wert">
+            <div class="calc-head">
+                <span class="eyebrow">Calculadora 02</span>
+                <h2>Evolución del valor</h2>
+            </div>
+            <div class="calc-grid">
+                <div>
+                    <div class="calc-field"><label>Valor actual / precio de compra (€)</label><input type="number" id="w_preis" value="400000" min="0"></div>
+                    <div class="calc-field"><label>Revalorización anual esperada (%)</label><input type="number" id="w_rate" value="3" min="-20" step="0.1"></div>
+                    <div class="calc-field"><label>Periodo de tenencia (años)</label><input type="number" id="w_jahre" value="10" min="1" max="50"></div>
+                </div>
+                <div class="calc-results">
+                    <div class="result-row"><span class="result-label">Valor previsto</span><span class="result-value" id="w_endwert">–</span></div>
+                    <div class="result-row minor"><span class="result-label">Plusvalía (absoluta)</span><span class="result-value" id="w_zuwachs">–</span></div>
+                    <div class="result-row minor"><span class="result-label">Plusvalía (total %)</span><span class="result-value" id="w_prozent">–</span></div>
+                    <p class="calc-note">Modelo de interés compuesto basado en una revalorización anual constante. La evolución real del mercado fluctúa; la ubicación y el estado del inmueble son determinantes.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mallorca Investment Guide -->
+        <section class="mallorca-box" id="mallorca">
+            <h2>Qué necesita para invertir en Mallorca</h2>
+            <p class="lead">La compra de un inmueble en España funciona de forma distinta a Alemania. Lo más importante de un vistazo, para que llegue preparado a la conversación.</p>
+            <div class="mallorca-list">
+                <div class="mallorca-item"><h4>Número NIE</h4><p>El número de identificación fiscal español para extranjeros es requisito imprescindible para la compra, la cuenta bancaria y los contratos.</p></div>
+                <div class="mallorca-item"><h4>Cuenta bancaria española</h4><p>Por lo general necesaria para el pago del precio de compra, los impuestos y los gastos corrientes (luz, agua, IBI).</p></div>
+                <div class="mallorca-item"><h4>Notario y Registro de la Propiedad</h4><p>La compra se formaliza mediante escritura notarial (Escritura) y se inscribe en el Registro de la Propiedad.</p></div>
+                <div class="mallorca-item"><h4>Abogado / Gestor</h4><p>Se recomienda encarecidamente una revisión jurídica independiente (cargas, licencias de obra, permisos).</p></div>
+                <div class="mallorca-item"><h4>Gastos de adquisición</h4><p>El Impuesto de Transmisiones Patrimoniales (ITP) sobre inmuebles de segunda mano suele ser del 8 al 11,5 %; en obra nueva, IVA + AJD. Más notario y registro.</p></div>
+                <div class="mallorca-item"><h4>Gastos e impuestos corrientes</h4><p>Impuesto sobre bienes inmuebles (IBI), en su caso gastos de comunidad, impuesto sobre el patrimonio e impuesto sobre la renta de los ingresos por alquiler.</p></div>
+                <div class="mallorca-item"><h4>Licencia de alquiler</h4><p>Para el alquiler turístico de corta duración se requiere una licencia administrativa; no todos los inmuebles la obtienen.</p></div>
+                <div class="mallorca-item"><h4>Contactos locales y servicio integral</h4><p>Contamos con socios fijos sobre el terreno en Mallorca para toda la tramitación, y si lo desea, en servicio integral: gestión de llaves, inspección del inmueble, coordinación de artesanos y proveedores, incluso cuando usted no está en su inmueble.</p></div>
+            </div>
+            <div style="text-align:center; margin-top:36px;">
+                <a class='btn' href='/es/potenzialcheck'>Iniciar el chequeo de potencial gratuito</a>
+                <p style="font-size:11px;color:#666;margin-top:14px;">Información general, a fecha de 2026 – no constituye asesoramiento jurídico ni fiscal.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top"><a class='logo' href='/es/'><div class="logo-circle">V</div><div class="logo-text"><span class="logo-name">Valora</span><span class="logo-sub">Property Advisory</span></div></a></div>
+            <nav class="footer-nav">
+                <a href='/es/'>Inicio</a>
+                <a href='/es/ueber-mich'>Sobre nosotros</a>
+                <a href='/es/#services'>Servicios</a>
+                <a href='/es/immobilien/'>Inmuebles</a>
+                <a href='/es/#contact'>Contacto</a>
+            </nav>
+            <div class="footer-bottom">
+                <div class="footer-legal"><a href='/es/datenschutz'>Política de privacidad</a> &nbsp;|&nbsp; <a href='/es/impressum'>Aviso legal</a></div>
+                <div class="footer-copy">Copyright &copy; 2026 Valora Property Advisory. Todos los derechos reservados.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        const eur = n => isFinite(n) ? n.toLocaleString('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 }) : '–';
+        const pct = n => isFinite(n) ? n.toLocaleString('de-DE', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + ' %' : '–';
+        const val = id => parseFloat(document.getElementById(id).value) || 0;
+
+        function calcRendite() {
+            const preis = val('r_preis'), neben = val('r_neben'), miete = val('r_miete'),
+                  kosten = val('r_kosten'), ek = val('r_ek'), zins = val('r_zins');
+            const gesamt = preis * (1 + neben / 100);
+            const fk = Math.max(gesamt - ek, 0);
+            const zinskosten = fk * zins / 100;
+            const cf = miete - kosten - zinskosten;
+            document.getElementById('r_brutto').textContent = preis > 0 ? pct(miete / preis * 100) : '–';
+            document.getElementById('r_netto').textContent = gesamt > 0 ? pct((miete - kosten) / gesamt * 100) : '–';
+            document.getElementById('r_ekr').textContent = ek > 0 ? pct(cf / ek * 100) : '–';
+            document.getElementById('r_gesamt').textContent = eur(gesamt);
+            document.getElementById('r_cf').textContent = eur(cf);
+        }
+        function calcWert() {
+            const preis = val('w_preis'), rate = val('w_rate'), jahre = val('w_jahre');
+            const endwert = preis * Math.pow(1 + rate / 100, jahre);
+            document.getElementById('w_endwert').textContent = eur(endwert);
+            document.getElementById('w_zuwachs').textContent = eur(endwert - preis);
+            document.getElementById('w_prozent').textContent = preis > 0 ? pct((endwert / preis - 1) * 100) : '–';
+        }
+        document.querySelectorAll('#rendite input').forEach(i => i.addEventListener('input', calcRendite));
+        document.querySelectorAll('#wert input').forEach(i => i.addEventListener('input', calcWert));
+        calcRendite(); calcWert();
+    </script>
+    <script src="/chat-widget.js" defer></script>
+</body>
+</html>

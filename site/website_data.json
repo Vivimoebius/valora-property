@@ -1,0 +1,51 @@
+{
+  "site_type": "homepage",
+  "company": {
+    "name": "Valora Property Advisory",
+    "industry": "Strategisches Immobilienmanagement & Verkauf",
+    "target_audience": "Eigentuemer, Investoren, Kapitalanleger",
+    "unique_selling": "Strategische Steuerung statt Verwaltung, persoenliche Begleitung, standortunabhaengig",
+    "tone": "elegant, luxurioes, vertrauenswuerdig",
+    "theme": "champagne",
+    "primary_color": "#c9a96e",
+    "address": "Wolfgang-Heinze-Straße 8, 04416 Markkleeberg",
+    "phone": "0172 577 0633",
+    "email": "info@valora-property.com"
+  },
+  "content": {
+    "slogan": "Strategisches Immobilienmanagement mit Weitblick",
+    "hero_text": "Ihre Immobilien verdienen mehr als Verwaltung. Wir bieten strategische Steuerung, persoenliche Begleitung und nachhaltigen Werterhalt.",
+    "cta_text": "Gespraech vereinbaren",
+    "about_text": "Hinter Valora Property Advisory steht Vivian Moebius mit einer klaren Vision: Qualitaet statt Masse. Mit langjaehriger Erfahrung in der Immobilienverwaltung verbindet sie strategisches Management mit persoenlicher Begleitung. Standortunabhaengig, ganzheitlich und exklusiv betreut sie Eigentuemer und Investoren, die Wert auf wirtschaftlich sinnvolle Steuerung und individuelle Loesungen legen.",
+    "meta_description": "Valora Property Advisory - Strategisches Immobilienmanagement und Verkauf. Persoenlich, exklusiv und standortunabhaengig fuer Eigentuemer und Investoren."
+  },
+  "services": [
+    {
+      "name": "Immobilienmanagement",
+      "description": "Strategische Steuerung, Koordination und Optimierung Ihrer Kapitalanlage- und Ferienimmobilien. Als Schnittstelle zwischen Eigentuemer, Verwaltung und Dienstleistern.",
+      "icon": "✦"
+    },
+    {
+      "name": "Eigentuemerbegleitung",
+      "description": "Pruefung von Abrechnungen, Analyse von Kostenstrukturen und Identifikation von Optimierungspotenzialen. Damit Sie fundierte Entscheidungen treffen.",
+      "icon": "◆"
+    },
+    {
+      "name": "Kapitalanlage-Management",
+      "description": "Ganzheitliche Betreuung mit Fokus auf Werterhalt, Rendite und Entlastung. Fuer Eigentuemer, die mehr erwarten als klassische Verwaltung.",
+      "icon": "✶"
+    },
+    {
+      "name": "Immobilienverkauf",
+      "description": "Strategische Vermarktung und persoenliche Begleitung beim Verkauf von Wohn- und Anlageimmobilien. Diskret, professionell und zielgerichtet.",
+      "icon": "❖"
+    }
+  ],
+  "images": {
+    "hero": "",
+    "about": "",
+    "team": "",
+    "background": ""
+  },
+  "generated": "2026-04-22T11:36:12.459956"
+}

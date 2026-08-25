@@ -1,0 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/immobilien"
+public_folder: "/images/immobilien"
+
+locale: 'de'
+
+collections:
+  - name: "immobilien"
+    label: "Immobilien"
+    folder: "immobilien/objekte"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Kategorie", name: "category", widget: "select", options: ["Kapitalanlage", "Ferienimmobilie", "Verkauf", "Management"]}
+      - {label: "Standort", name: "location", widget: "string"}
+      - {label: "Region", name: "region", widget: "select", options: ["Leipzig", "Palma de Mallorca", "Sonstige"]}
+      - {label: "Titelbild", name: "image", widget: "image"}
+      - {label: "Galerie", name: "gallery", widget: "list", field: {label: "Bild", name: "image", widget: "image"}, required: false}
+      - {label: "Fläche (m²)", name: "area", widget: "string", required: false}
+      - {label: "Zimmer", name: "rooms", widget: "string", required: false}
+      - {label: "Grundstück (m²)", name: "plot", widget: "string", required: false}
+      - {label: "Baujahr", name: "year", widget: "string", required: false}
+      - {label: "Preis", name: "price", widget: "string", default: "Preis auf Anfrage"}
+      - {label: "Status", name: "status", widget: "select", options: ["Im Management", "Verkauf", "Vermietet", "Reserviert"]}
+      - {label: "Beschreibung (DE)", name: "description_de", widget: "markdown"}
+      - {label: "Beschreibung (EN)", name: "description_en", widget: "markdown", required: false}
+      - {label: "Beschreibung (ES)", name: "description_es", widget: "markdown", required: false}
+      - {label: "Veröffentlicht", name: "published", widget: "boolean", default: true}

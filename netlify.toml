@@ -1,0 +1,22 @@
+# netlify.toml — Valora Property Advisory
+# Hinweis: aus der Live-Konfiguration rekonstruiert. Die Original-netlify.toml des
+# Deploys ist über die Netlify-API nicht als Rohinhalt exportierbar; die Header-Werte
+# unten sind 1:1 aus den Live-Response-Headern von https://valora-property.com uebernommen.
+# Beim ersten Deploy aus diesem Repo auf einer Preview verifizieren (siehe README).
+
+[build]
+  publish = "site"
+
+[functions]
+  directory = "site/netlify/functions"
+  node_bundler = "esbuild"
+
+# Security-Header (entsprechen dem Live-Stand)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Strict-Transport-Security = "max-age=31536000"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

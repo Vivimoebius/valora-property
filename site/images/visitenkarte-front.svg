@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 910 610" role="img" aria-label="Valora Property Advisory — Visitenkarte Vorderseite">
+  <title>Valora Property Advisory — Vorderseite</title>
+  <desc>Druckformat 91 x 61 mm inkl. 3 mm Beschnitt, Endformat 85 x 55 mm.</desc>
+
+  <rect x="0" y="0" width="910" height="610" fill="#0a0a0a"/>
+
+  <!-- Mittiges Monogramm + Wordmark -->
+  <g transform="translate(455 290)">
+    <circle cx="0" cy="-60" r="78" fill="none" stroke="#ceb068" stroke-width="1.4"/>
+    <text x="0" y="-32" text-anchor="middle"
+          font-family="'Cormorant Garamond', Georgia, serif"
+          font-size="96" font-weight="400" fill="#ceb068">V</text>
+
+    <text x="0" y="80" text-anchor="middle"
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+          font-size="32" font-weight="400" letter-spacing="11"
+          fill="#ceb068">VALORA</text>
+
+    <line x1="-110" y1="100" x2="110" y2="100" stroke="#ceb068" stroke-width="0.6" opacity="0.55"/>
+
+    <text x="0" y="124" text-anchor="middle"
+          font-family="'Inter', 'Helvetica Neue', Arial, sans-serif"
+          font-size="11" font-weight="400" letter-spacing="6"
+          fill="#ceb068" opacity="0.85">PROPERTY ADVISORY</text>
+  </g>
+
+  <!-- Slogan unten -->
+  <text x="455" y="535" text-anchor="middle"
+        font-family="'Cormorant Garamond', Georgia, serif"
+        font-size="18" font-style="italic" font-weight="400"
+        fill="#ceb068" opacity="0.85">Strategisches Immobilienmanagement mit Weitblick</text>
+</svg>

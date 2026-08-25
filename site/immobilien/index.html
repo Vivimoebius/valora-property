@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Immobilien von Valora aus Leipzig/Markkleeberg: Kapitalanlagen in Leipzig, Ferienimmobilien auf Mallorca, Suchprofil und Mallorca-Preisatlas. Portfolio im Aufbau.">
+    <meta name="keywords" content="Immobilien Leipzig, Kapitalanlage Leipzig, Anlageimmobilie Leipzig kaufen, Ferienimmobilie Mallorca, Immobilienpreise Mallorca, Suchprofil Immobilien, Valora">
+    <meta name="author" content="Valora Property Advisory">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>Immobilien Leipzig & Mallorca | Valora</title>
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Valora Property Advisory">
+    <meta property="og:locale" content="de_DE">
+    <meta property="og:title" content="Immobilien – Kapitalanlagen Leipzig & Mallorca | Valora Property Advisory">
+    <meta property="og:description" content="Ausgewählte Immobilien: Kapitalanlagen in Leipzig und Ferienimmobilien auf Mallorca – diskret begleitet, strategisch bewertet.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://valora-property.com/immobilien/">
+    <meta property="og:image" content="https://valora-property.com/images/grid-gruenderzeit.jpg">
+    <meta property="og:image:alt" content="Immobilien von Valora Property Advisory in Leipzig und auf Mallorca">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Immobilien – Kapitalanlagen Leipzig & Mallorca | Valora Property Advisory">
+    <meta name="twitter:description" content="Ausgewählte Immobilien: Kapitalanlagen in Leipzig und Ferienimmobilien auf Mallorca.">
+    <meta name="twitter:image" content="https://valora-property.com/images/grid-gruenderzeit.jpg">
+    <link rel="canonical" href="https://valora-property.com/immobilien/">
+    <link rel="alternate" hreflang="de" href="https://valora-property.com/immobilien/">
+    <link rel="alternate" hreflang="en" href="https://valora-property.com/en/immobilien/">
+    <link rel="alternate" hreflang="es" href="https://valora-property.com/es/immobilien/">
+    <link rel="alternate" hreflang="x-default" href="https://valora-property.com/immobilien/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "url": "https://valora-property.com/immobilien/",
+      "name": "Immobilien – Valora Property Advisory",
+      "inLanguage": "de",
+      "isPartOf": {"@id": "https://valora-property.com/#website"},
+      "about": {"@id": "https://valora-property.com/#organization"},
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://valora-property.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Immobilien", "item": "https://valora-property.com/immobilien/"}
+        ]
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <style>
+        .properties-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+        .property-card { background: #0a0a0a; border: 1px solid rgba(206,176,104,0.1); transition: transform 0.4s ease, box-shadow 0.4s ease; cursor: pointer; }
+        .property-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+        .property-img { width: 100%; height: 280px; object-fit: cover; display: block; }
+        .property-body { padding: 32px; }
+        .property-tag { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; color: #ceb068; margin-bottom: 8px; display: block; }
+        .property-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: #fff; margin-bottom: 12px; }
+        .property-location { font-size: 12px; color: #888; margin-bottom: 16px; display: flex; align-items: center; gap: 6px; }
+        .property-details { display: flex; gap: 24px; margin-bottom: 20px; }
+        .property-detail { font-size: 12px; color: #888; }
+        .property-detail span { color: #fff; font-weight: 400; display: block; font-size: 14px; }
+        .property-price { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: #ceb068; }
+        .property-status { display: inline-block; padding: 4px 12px; font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; border: 1px solid rgba(206,176,104,0.3); color: #ceb068; margin-top: 12px; }
+        .empty-state { text-align: center; padding: 120px 48px; }
+        .empty-state h2 { font-family: 'Cormorant Garamond', serif; font-size: 32px; color: #ceb068; margin-bottom: 16px; }
+        .empty-state p { color: #888; font-size: 14px; line-height: 1.9; max-width: 500px; margin: 0 auto; }
+        @media (max-width: 900px) { .properties-grid { grid-template-columns: 1fr; padding: 0 24px; } .property-img { height: 220px; } }
+        /* Mehrwert-Band */
+        .value-band { max-width: 1100px; margin: 0 auto; padding: 8px 48px 0; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+        .value-item { border-top: 1px solid rgba(206,176,104,0.25); padding-top: 16px; }
+        .value-item h4 { font-family: 'Inter', sans-serif; font-size: 13px; color: #ceb068; font-weight: 500; margin-bottom: 6px; }
+        .value-item p { font-size: 12px; color: #999; line-height: 1.7; font-weight: 300; }
+        /* Preisatlas */
+        .atlas { max-width: 900px; margin: 0 auto; }
+        .atlas-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(206,176,104,0.18); border: 1px solid rgba(206,176,104,0.18); }
+        .atlas-row { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; background: #000; padding: 18px 22px; }
+        .atlas-region { font-family: 'Inter', sans-serif; font-size: 13px; color: #ddd; font-weight: 300; }
+        .atlas-region small { display: block; color: #777; font-size: 11px; margin-top: 2px; }
+        .atlas-price { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #ceb068; white-space: nowrap; }
+        /* Suchprofil */
+        .search-form { max-width: 720px; margin: 0 auto; }
+        .search-form .row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .search-form label.fld { display: block; margin-bottom: 18px; }
+        .search-form label.fld span { display: block; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #ceb068; margin-bottom: 8px; }
+        .search-form select, .search-form input { width: 100%; padding: 13px 14px; background: #000; color: #fff; border: 1px solid rgba(255,255,255,0.15); font-family: 'Inter', sans-serif; font-size: 14px; color-scheme: dark; }
+        .search-form select:focus, .search-form input:focus { outline: none; border-color: #ceb068; }
+        .search-form select option { color: #000; }
+        @media (max-width: 760px) { .value-band { grid-template-columns: 1fr 1fr; } .atlas-grid { grid-template-columns: 1fr; } .search-form .row2 { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar scrolled"><div class="nav-container">
+        <button class="nav-toggle" onclick="document.getElementById('nl').style.display=document.getElementById('nl').style.display==='flex'?'none':'flex'"><span></span><span></span><span></span></button>
+        <a class='logo' href='/'><div class="logo-circle">V</div><div class="logo-text"><span class="logo-name">Valora</span><span class="logo-sub">Property Advisory</span></div></a>
+        <div class="lang-switcher"><a class='lang-active' href='/immobilien/'>DE</a><a href='/en/'>EN</a><a href='/es/'>ES</a></div>
+    </div></nav>
+    <ul class="nav-links" id="nl" style="display:none;">
+        <li><a href='/'>Home</a></li>
+        <li><a href='/ueber-mich'>Über uns</a></li>
+        <li><a href='/#services'>Leistungen</a></li>
+        <li><a href='/immobilien/'>Immobilien</a></li>
+        <li><a href='/#contact'>Kontakt</a></li>
+    </ul>
+
+    <section class="page-header"><div class="container">
+        <p style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:#ceb068;margin-bottom:16px;">Portfolio</p>
+        <h1 style="font-size:48px;color:#fff;font-weight:300;">Immobilien</h1>
+        <div style="width:40px;height:1px;background:#ceb068;margin:16px auto 0;"></div>
+    </div></section>
+
+    <section style="padding: 24px 0 0; background: #000;">
+        <div class="container-narrow" style="text-align: center;">
+            <p style="font-family:'Inter',sans-serif;font-size:16px;font-weight:300;color:#999;line-height:1.9;">Valora startet bewusst klein und kuratiert: Statt Masse begleiten wir wenige, sorgfältig ausgewählte Objekte – als Kapitalanlage in Leipzig oder als Ferienimmobilie auf Mallorca. Unser Portfolio entsteht gerade.</p>
+            <p style="font-family:'Inter',sans-serif;font-size:16px;font-weight:300;color:#999;line-height:1.9;margin-top:20px;">Sie möchten kaufen, verkaufen oder ein Objekt prüfen lassen? <a href="#suchprofil" style="color:#ceb068;text-decoration:none;border-bottom:1px solid rgba(206,176,104,0.35);">Hinterlegen Sie Ihr Suchprofil</a> oder <a href='/#contact' style='color:#ceb068;text-decoration:none;border-bottom:1px solid rgba(206,176,104,0.35);'>sprechen Sie uns an</a>.</p>
+        </div>
+    </section>
+
+    <!-- Beispiel-Objekte (werden später über CMS gepflegt) -->
+    <section style="padding: 56px 0 60px; background: #000;">
+        <div class="container-narrow" style="text-align:center; border:1px solid rgba(206,176,104,0.22); padding:52px 40px;">
+            <p class="eyebrow center">Portfolio im Aufbau</p>
+            <h2 style="margin-bottom:16px;">Aktuelle Objekte folgen in Kürze</h2>
+            <p style="color:#999;font-size:16px;line-height:1.9;max-width:560px;margin:0 auto 32px;">Wir kuratieren gerade die ersten ausgewählten Immobilien in Leipzig und auf Mallorca. Sie suchen bereits etwas Konkretes – oder möchten ein Objekt diskret verkaufen? Dann lernen wir uns am besten persönlich kennen.</p>
+            <a href="#suchprofil" class="btn" style="margin:6px;">Suchprofil hinterlegen</a>
+            <a class='btn' href='/#contact' style='margin:6px;'>Gespräch vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- Ihr Mehrwert -->
+    <section style="padding: 40px 0 20px; background: #000;">
+        <div class="container" style="text-align:center;">
+            <p class="eyebrow center">Ihr Mehrwert</p>
+            <h2 style="margin-bottom: 40px;">Was Sie hier bekommen</h2>
+            <div class="value-band">
+                <div class="value-item"><h4>Persönliches Suchprofil</h4><p>Sagen Sie uns, was Sie suchen – wir finden es, auch abseits der Portale (Off-Market).</p></div>
+                <div class="value-item"><h4>Mallorca-Preisatlas</h4><p>Realistische Richtwerte je Region – damit Sie Preise einordnen können.</p></div>
+                <div class="value-item"><h4>Kostenlose Rechner</h4><p>Rendite, Eigenkapitalrendite und Wertentwicklung in Sekunden – <a href='/rechner' style='color:#ceb068;text-decoration:none;border-bottom:1px solid rgba(206,176,104,0.35);'>zu den Rechnern</a>.</p></div>
+                <div class="value-item"><h4>Ehrliche Einordnung</h4><p>Jedes Objekt prüfen wir kritisch – was es kann und was es kostet, klar benannt.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mallorca Immobilienpreisatlas -->
+    <section id="preisatlas" style="padding: 80px 0; background: #000; border-top: 1px solid rgba(206,176,104,0.12);">
+        <div class="container atlas">
+            <p class="eyebrow center">Orientierung</p>
+            <h2 style="text-align:center; margin-bottom: 12px;">Mallorca Immobilienpreisatlas</h2>
+            <p style="text-align:center; color:#999; font-size:14px; line-height:1.8; max-width:600px; margin:0 auto 40px;">Was kostet ein Quadratmeter wo? Richtwerte für Bestandsimmobilien als erste Orientierung – die tatsächlichen Preise hängen stark von Lage, Zustand und Ausstattung ab.</p>
+            <div class="atlas-grid">
+                <div class="atlas-row"><span class="atlas-region">Palma de Mallorca <small>Stadt &amp; Altstadt</small></span><span class="atlas-price">3.500–6.500 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Südwesten <small>Andratx · Santa Ponça · Son Vida</small></span><span class="atlas-price">5.000–12.000 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Serra de Tramuntana <small>Valldemossa · Deià · Sóller</small></span><span class="atlas-price">5.000–10.000 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Norden <small>Pollença · Alcúdia</small></span><span class="atlas-price">3.500–7.000 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Südosten <small>Santanyí · Ses Salines · Felanitx</small></span><span class="atlas-price">3.500–7.500 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Osten <small>Artà · Capdepera · Cala Ratjada</small></span><span class="atlas-price">3.000–6.000 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Inselmitte <small>Es Pla</small></span><span class="atlas-price">2.000–4.000 €/m²</span></div>
+                <div class="atlas-row"><span class="atlas-region">Neubau / Premium <small>inselweit, Top-Lagen</small></span><span class="atlas-price">ab 8.000 €/m²</span></div>
+            </div>
+            <p style="text-align:center; color:#666; font-size:11px; margin-top:18px;">Indikative Richtwerte, Stand 2026 – keine Bewertung oder Kaufberatung. Für eine konkrete Einordnung Ihres Objekts <a href='/#contact' style='color:#888;'>sprechen Sie uns an</a>.</p>
+        </div>
+    </section>
+
+    <!-- Suchprofil -->
+    <section id="suchprofil" style="padding: 80px 0 100px; background: #000; border-top: 1px solid rgba(206,176,104,0.12);">
+        <div class="container search-form">
+            <p class="eyebrow center">Suchprofil</p>
+            <h2 style="text-align:center; margin-bottom: 12px;">Was suchen Sie?</h2>
+            <p style="text-align:center; color:#999; font-size:14px; line-height:1.8; max-width:560px; margin:0 auto 44px;">Hinterlegen Sie Ihr Gesuch – wir gleichen es mit unserem Bestand und Netzwerk ab und melden uns, sobald etwas Passendes verfügbar ist. Auch Off-Market.</p>
+            <form action='/danke' method='POST' name='suchprofil'>
+                <input type="hidden" name="form-name" value="suchprofil">
+                <p hidden><label>Nicht ausfüllen: <input name="bot-field"></label></p>
+                <div class="row2">
+                    <label class="fld"><span>Was suchen Sie?</span>
+                        <select name="was" required>
+                            <option value="">Bitte wählen …</option>
+                            <option>Eigentumswohnung</option>
+                            <option>Haus / Villa</option>
+                            <option>Mehrfamilienhaus / Zinshaus</option>
+                            <option>Finca / Landhaus</option>
+                            <option>Grundstück</option>
+                            <option>Gewerbeobjekt</option>
+                        </select>
+                    </label>
+                    <label class="fld"><span>Budget</span>
+                        <select name="budget" required>
+                            <option value="">Bitte wählen …</option>
+                            <option>bis 250.000 €</option>
+                            <option>250.000–500.000 €</option>
+                            <option>500.000–1 Mio. €</option>
+                            <option>1–2 Mio. €</option>
+                            <option>über 2 Mio. €</option>
+                        </select>
+                    </label>
+                </div>
+                <label class="fld"><span>Wo suchen Sie?</span>
+                    <select name="wo" id="woSelect" required>
+                        <option value="">Bitte wählen …</option>
+                        <option value="Deutschland">Deutschland</option>
+                        <option value="Mallorca">Mallorca</option>
+                    </select>
+                </label>
+                <div class="row2" id="grpDe" style="display:none;">
+                    <label class="fld"><span>Bundesland</span>
+                        <select name="bundesland">
+                            <option value="">Bitte wählen …</option>
+                            <option>Baden-Württemberg</option><option>Bayern</option><option>Berlin</option>
+                            <option>Brandenburg</option><option>Bremen</option><option>Hamburg</option>
+                            <option>Hessen</option><option>Mecklenburg-Vorpommern</option><option>Niedersachsen</option>
+                            <option>Nordrhein-Westfalen</option><option>Rheinland-Pfalz</option><option>Saarland</option>
+                            <option>Sachsen</option><option>Sachsen-Anhalt</option><option>Schleswig-Holstein</option><option>Thüringen</option>
+                        </select>
+                    </label>
+                    <label class="fld"><span>Stadt</span>
+                        <input type="text" name="stadt" placeholder="z. B. Leipzig">
+                    </label>
+                </div>
+                <label class="fld" id="grpMallorca" style="display:none;"><span>Region auf Mallorca</span>
+                    <select name="mallorca_region">
+                        <option value="">Bitte wählen …</option>
+                        <option>Palma de Mallorca</option>
+                        <option>Südwesten (Andratx · Santa Ponça)</option>
+                        <option>Serra de Tramuntana (Valldemossa · Sóller)</option>
+                        <option>Norden (Pollença · Alcúdia)</option>
+                        <option>Südosten (Santanyí · Felanitx)</option>
+                        <option>Osten (Artà · Capdepera)</option>
+                        <option>Inselmitte (Es Pla)</option>
+                    </select>
+                </label>
+                <div class="row2">
+                    <label class="fld"><span>Name</span><input type="text" name="name" placeholder="Ihr Name" required></label>
+                    <label class="fld"><span>E-Mail</span><input type="email" name="email" placeholder="Ihre E-Mail" required></label>
+                </div>
+                <div style="text-align:center; margin-top:16px;">
+                    <button type="submit" class="btn">Suchprofil senden</button>
+                    <p style="font-size:11px;color:#555;margin-top:14px;">Unverbindlich. Mit dem Absenden stimmen Sie der Verarbeitung gemäß <a href='/datenschutz' style='color:#888;'>Datenschutzerklärung</a> zu.</p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-top"><a class='logo' href='/'><div class="logo-circle">V</div><div class="logo-text"><span class="logo-name">Valora</span><span class="logo-sub">Property Advisory</span></div></a></div><nav class="footer-nav"><a href='/'>Home</a><a href='/ueber-mich'>Über uns</a><a href='/datenschutz'>Datenschutz</a><a href='/impressum'>Impressum</a></nav><div class="footer-bottom"><div class="footer-legal"><a href='/datenschutz'>Datenschutz</a> | <a href='/impressum'>Impressum</a></div><div class="footer-copy">Copyright 2026 Valora Property Advisory</div></div></div></footer>
+    <script>
+        (function () {
+            var wo = document.getElementById('woSelect');
+            var de = document.getElementById('grpDe');
+            var ma = document.getElementById('grpMallorca');
+            if (!wo) return;
+            function sync() {
+                var v = wo.value;
+                de.style.display = (v === 'Deutschland') ? 'grid' : 'none';
+                ma.style.display = (v === 'Mallorca') ? 'block' : 'none';
+            }
+            wo.addEventListener('change', sync);
+            sync();
+        })();
+    </script>
+    <script src="/chat-widget.js" defer></script>
+</body>
+</html>
