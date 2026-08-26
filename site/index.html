@@ -494,9 +494,9 @@
                             <span>Leipzig · Palma de Mallorca · Standortunabhängig</span>
                         </div>
                     </div>
-                    <!-- Termin: führt zum Kontaktformular (kein Online-Kalender hinterlegt) -->
+                    <!-- Termin: Terminanfrage per E-Mail (Interim – Google-Terminplan folgt, sobald der Buchungslink vorliegt) -->
                     <div style="margin-top: 32px;">
-                        <a href="https://cal.com/valora-vivian" target="_blank" rel="noopener" data-cal-link="valora-vivian" data-cal-config='{"layout":"month_view"}' class="btn" style="font-size: 10px; padding: 14px 36px;">Termin buchen</a>
+                        <a href="mailto:info@valora-property.com?subject=Terminanfrage%20Erstgespr%C3%A4ch%20(30%20Min%2C%20kostenfrei)" class="btn" style="font-size: 10px; padding: 14px 36px;">Termin buchen</a>
                         <p style="font-size: 11px; color: #555; margin-top: 8px;">Erstgespräch kostenfrei · 30 Min</p>
                     </div>
                 </div>
@@ -552,10 +552,7 @@
     </footer>
 
     <script>
-        // Cal.com Buchungs-Embed (Popup)
-        (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-        Cal("init", {origin:"https://cal.com"});
-        Cal("ui", {"styles":{"branding":{"brandColor":"#ceb068"}},"hideEventTypeDetails":false,"layout":"month_view"});
+        // (Cal.com entfernt – Terminbuchung läuft jetzt über den Google-Terminplan-Button oben)
 
         document.getElementById('navToggle').addEventListener('click', function() {
             document.getElementById('navLinks').classList.toggle('active');
